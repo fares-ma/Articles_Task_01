@@ -17,7 +17,7 @@ namespace Articles.Infrastructure
                 entity.HasKey(a => a.Id);
                 entity.Property(a => a.Title).IsRequired();
                 entity.Property(a => a.Description).IsRequired();
-                // تخزين Tags كسلسلة نصية مفصولة بفواصل
+                
                 entity.Property(a => a.Tags)
                     .HasConversion(
                         v => string.Join(",", v),
