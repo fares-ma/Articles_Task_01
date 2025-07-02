@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\Articles.Domain\Articles.Domain.csproj" />
-    <ProjectReference Include="..\Articles.Application\Articles.Application.csproj" />
+    <ProjectReference Include="..\..\Core\Articles.Domain\Articles.Domain.csproj" />
+    <ProjectReference Include="..\..\Core\Articles.Application\Articles.Application.csproj" />
   </ItemGroup>
 
   <ItemGroup>

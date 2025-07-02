@@ -3,23 +3,28 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Articles.Domain", "Articles.Domain\Articles.Domain.csproj", "{8CBFD693-C886-4D18-9C37-3F5B9691BFCA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Articles.Domain", "Core\Articles.Domain\Articles.Domain.csproj", "{8CBFD693-C886-4D18-9C37-3F5B9691BFCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Articles.Application", "Articles.Application\Articles.Application.csproj", "{593C8B69-0DB1-4769-ADA0-CF622B4EBE3C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Articles.Application", "Core\Articles.Application\Articles.Application.csproj", "{593C8B69-0DB1-4769-ADA0-CF622B4EBE3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Articles.Infrastructure", "Articles.Infrastructure\Articles.Infrastructure.csproj", "{AD0D2ED4-780B-4013-9D60-43275234E07A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Articles.Infrastructure", "Infrastructure\Articles.Infrastructure\Articles.Infrastructure.csproj", "{AD0D2ED4-780B-4013-9D60-43275234E07A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Articles.API", "Articles.API\Articles.API.csproj", "{C705F0E9-0622-4660-B8FE-40650DA5B8AF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Articles.API", "API\Articles.API\Articles.API.csproj", "{C705F0E9-0622-4660-B8FE-40650DA5B8AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Articles.Tests", "Articles.Tests\Articles.Tests.csproj", "{96F1FD3C-12DC-4CE7-A5C2-0DD59A0175FF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Articles.Tests", "Tests\Articles.Tests\Articles.Tests.csproj", "{96F1FD3C-12DC-4CE7-A5C2-0DD59A0175FF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{071936E5-415F-4075-BFF3-7D4C1E36E86D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{3F2D13FA-BB87-46D0-9B2F-0ECBBA3D3947}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3ACCC090-9AA9-4264-A671-7D83FB95BFE2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{36C1029F-8C5C-4AFC-9B91-953DD6316A0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{8CBFD693-C886-4D18-9C37-3F5B9691BFCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -42,5 +47,15 @@ Global
 		{96F1FD3C-12DC-4CE7-A5C2-0DD59A0175FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96F1FD3C-12DC-4CE7-A5C2-0DD59A0175FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96F1FD3C-12DC-4CE7-A5C2-0DD59A0175FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8CBFD693-C886-4D18-9C37-3F5B9691BFCA} = {071936E5-415F-4075-BFF3-7D4C1E36E86D}
+		{593C8B69-0DB1-4769-ADA0-CF622B4EBE3C} = {071936E5-415F-4075-BFF3-7D4C1E36E86D}
+		{AD0D2ED4-780B-4013-9D60-43275234E07A} = {3F2D13FA-BB87-46D0-9B2F-0ECBBA3D3947}
+		{C705F0E9-0622-4660-B8FE-40650DA5B8AF} = {36C1029F-8C5C-4AFC-9B91-953DD6316A0E}
+		{96F1FD3C-12DC-4CE7-A5C2-0DD59A0175FF} = {3ACCC090-9AA9-4264-A671-7D83FB95BFE2}
 	EndGlobalSection
 EndGlobal

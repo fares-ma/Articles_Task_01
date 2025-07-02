@@ -5,7 +5,6 @@ using Articles.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? "Server=(localdb)\\mssqllocaldb;Database=ArticlesDb;Trusted_Connection=True;";
 builder.Services.AddInfrastructure(connectionString);
 builder.Services.AddScoped<IArticleService, ArticleService>();
@@ -16,7 +15,6 @@ builder.Services.AddControllers();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 app.UseSwagger();
 app.UseSwaggerUI();
 
